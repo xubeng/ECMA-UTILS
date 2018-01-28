@@ -1,0 +1,35 @@
+<script type="text/javascript">
+// 找到句子中最长的单词	 
+	function findLongestWord(str) {
+  var words = str.split(' ');
+  var maxLength = 0;
+document.writeln( str.length);
+
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+console.log("ee")
+  return maxLength;
+}
+// document.writeln(findLongestWord("q qq qqq"));
+
+// 大写单词首字母
+function titleCase(str) {
+  var arr = str.toLowerCase().split(" ");
+
+  for (var i=0;i<arr.length;i++){
+    arr[i].charAt(0).toUpperCase();
+    // console.log(arr[i][1].toUpperCase())
+//     for(var j=1;j<arr[i].length;j++){
+//       arr[i][j].toLowerCase();
+//     }
+  }
+  return arr.join(" ");
+}
+
+document.writeln(titleCase("q qq qqq"));
+
+
+</script>
